@@ -10,13 +10,19 @@
   </head>
   <body class="no-scrollbar bg-dark">
     <div id="root"></div>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DW9PR371HD"
+    ></script>
     <script>
-      window.va =
-        window.va ||
-        function () {
-          (window.vaq = window.vaq || []).push(arguments);
-        };
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DW9PR371HD");
     </script>
-    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>
